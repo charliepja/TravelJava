@@ -24,4 +24,10 @@ public class FlightTest {
     public void initalAvailableSeatsIsAllSeats() {
         assertEquals(400, flight1.availableSeats());
     }
+
+    @Test
+    public void canAddPassenger() {
+        flight1.addPassenger(passenger1);
+        assertEquals(1, flight1.getTotalPassengers());
+    }
 }

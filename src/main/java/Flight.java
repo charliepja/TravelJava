@@ -28,4 +28,10 @@ public class Flight {
         return capacity - currentPassengers;
     }
 
+    public void addPassenger(Passenger newPassenger) {
+        if(availableSeats() > 0) {
+            this.passengers.add(newPassenger);
+        }
+    }
+
 }
