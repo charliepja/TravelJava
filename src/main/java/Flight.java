@@ -21,4 +21,11 @@ public class Flight {
         return this.passengers.size();
     }
 
+    public int availableSeats() {
+        int currentPassengers = getTotalPassengers();
+        int capacity = this.plane.getPlaneCapacity();
+
+        return capacity - currentPassengers;
+    }
+
 }

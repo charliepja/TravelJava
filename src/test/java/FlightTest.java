@@ -19,4 +19,9 @@ public class FlightTest {
     public void initialPassengerCountIsZero() {
         assertEquals(0, flight1.getTotalPassengers());
     }
+
+    @Test
+    public void initalAvailableSeatsIsAllSeats() {
+        assertEquals(400, flight1.availableSeats());
+    }
 }
