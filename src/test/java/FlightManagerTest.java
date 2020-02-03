@@ -18,4 +18,9 @@ public class FlightManagerTest {
     public void canGetWeightReservedForBaggage() {
         assertEquals(5000, flight1.weightReservedForBaggage(plane1));
     }
+
+    @Test
+    public void canGetBaggagePerPassenger() {
+        assertEquals(12.50, flight1.baggageWeightPerPassenger(plane1), 0.01);
+    }
 }
