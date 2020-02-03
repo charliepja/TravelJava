@@ -12,4 +12,11 @@ public class FlightManager {
         double result = weightForBaggage / totalPassengers;
         return result;
     }
+
+    public double getBookedWeight(Flight flight, Plane plane) {
+        int currentPassengers = flight.getTotalPassengers();
+        double baggagePerPassenger = baggageWeightPerPassenger(plane);
+        double result = currentPassengers * baggagePerPassenger;
+        return result;
+    }
 }
